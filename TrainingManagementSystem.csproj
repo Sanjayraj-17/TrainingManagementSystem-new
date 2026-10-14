@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Avoid generating a native apphost/exe to prevent file-lock issues when
+         the previously built executable is still running. This will produce a
+         framework-dependent DLL instead of copying apphost.exe -> TrainingManagementSystem.exe. -->
+    <UseAppHost>false</UseAppHost>
+    <!-- Build output path changed to avoid locking issues if the default output
+         files are held by a running process. Adjust back if needed. -->
+    <OutputPath>bin\Debug\net10.0_build\</OutputPath>
+  </PropertyGroup>
+
+</Project>
